@@ -1,0 +1,11 @@
+{
+    "extends": "strongloop",
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+    "rules": {
+        "comma-dangle": 0,
+        "indent": [1, 4],
+        "max-len": [1, 120]
+    }
+}
