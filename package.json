@@ -20,8 +20,9 @@
   },
   "version": "1.0.0",
   "dependencies": {
+    "angular-chart.js": "1.1.1",
     "express": "4.16.2",
-    "helmet": "^3.9.0"
+    "helmet": "3.9.0"
   },
   "devDependencies": {
     "eslint": "4.12.1",
