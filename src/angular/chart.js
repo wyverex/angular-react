@@ -1,10 +1,17 @@
+var angular2react = require('angular2react').angular2react;
 
-import { ChartController } from './chart-controller';
+var ChartController = require('./chart-controller');
+var jitInjector = require('./jit-injector').jitInjector;
 
-export const ChartAngular = {
+var ChartAngular = {
     bindings: {
         data: '<'
     },
     controller: ChartController,
     templateUrl: './chart.html'
+};
+
+module.exports = {
+    Chart: angular2react('chartAngular', ChartAngular, jitInjector.$injector),
+    ChartAngular: ChartAngular
 };

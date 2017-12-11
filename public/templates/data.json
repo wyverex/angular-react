@@ -1,9 +1,0 @@
-{
-    "data": [300, 500, 100, 450],
-    "labels": [
-        "Download Sales",
-        "In-Store Sales",
-        "Mail-Order Sales",
-        "\"Early Bird\" Sales"
-    ]
-}

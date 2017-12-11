@@ -10,9 +10,7 @@ var REMOTEURL = 'http://ergast.com/api/f1/current/driverStandings.json?limit=10'
 
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
-        .when('/', { templateUrl: 'partials/angular-only.html', controller: CHARTCONTROLLER })
-        .when('/angular-react', { templateUrl: 'partials/angular-react.html', controller: PAGECONTROLLER })
-        .when('/react-only', { templateUrl: 'partials/react-only.html', controller: PAGECONTROLLER })
+        .when('/', { templateUrl: 'partials/angular-chart.html', controller: CHARTCONTROLLER })
         .otherwise('/404', { templateUrl: 'partials/404.html', controller: PAGECONTROLLER });
 }]);
 
