@@ -1,5 +1,3 @@
-'use strict';
-
 var path = require('path');
 
 var express = require('express');
@@ -9,7 +7,7 @@ var app = express();
 var PORT = process.env.port || 3000;
 
 // app.use(cors());
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
     res.header(
         'Access-Control-Allow-Headers',
@@ -30,14 +28,14 @@ app.use(helmet({
 app.use(express.static('public'));
 app.use(express.static('node_modules/chart.js/dist'));
 app.use(express.static('node_modules/angular-chart.js/dist'));
-app.get('/', function(request, response) {
+app.get('/', function (request, response) {
     response.sendFile(path.resolve(__dirname, 'public/index.html'));
 });
 
-app.listen(PORT, function() {
+app.listen(PORT, function () {
     console.info(`Listening on port: ${PORT}`);
 });
 
-app.use(function(request, response, next) {
+app.use(function (request, response, next) {
     response.status(404).send('404 Not Found');
 });

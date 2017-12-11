@@ -1,11 +1,16 @@
 {
-    "extends": "strongloop",
+    "extends": "standard",
     "parserOptions": {
         "ecmaVersion": 6
     },
+    "plugins": [
+        "react"
+    ],
     "rules": {
         "comma-dangle": 0,
         "indent": [1, 4],
-        "max-len": [1, 120]
+        "max-len": [1, 120],
+        "semi": "off",
+        "strict": "off"
     }
 }
